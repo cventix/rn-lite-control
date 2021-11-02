@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "162033661894",
+    "firebase_url": "https://luxsmartcontroller-196104.firebaseio.com",
+    "project_id": "luxsmartcontroller-196104",
+    "storage_bucket": "luxsmartcontroller-196104.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162033661894:android:ad01123d950787ef",
+        "android_client_info": {
+          "package_name": "com.luxsmart.controller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162033661894-23pd53gum07738aui0l27mvhh9t7itlg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.luxsmart.controller",
+            "certificate_hash": "05b75e46f91cf63346a0ee30b447ad69fdf399ba"
+          }
+        },
+        {
+          "client_id": "162033661894-0ritn66l15nhifatjo0s36vtqjh11817.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEgB5RKd5SctMvbwMeBekNY6avjmZvVGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162033661894-0ritn66l15nhifatjo0s36vtqjh11817.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "162033661894-763nevu2856e1d9j85j050bf0gjf4u87.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.luxsmart.controller",
+                "app_store_id": "1400570783"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

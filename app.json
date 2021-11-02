@@ -1,0 +1,51 @@
+{
+  "name": "litesense",
+  "displayName": "litesense",
+  "expo": {
+    "name": "litesense",
+    "slug": "litesense",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "primaryColor": "#363159",
+    "icon": "assets/images/logoPositive.png",
+    "scheme": "luxsmart",
+    "splash": {
+      "backgroundColor": "#FFF",
+      "image": "assets/images/logoPositive.png",
+      "tabletImage": "assets/images/logoPositive.png"
+    },
+    "ios": {
+      "infoPlist": {
+        "NSCameraUsageDescription": "Litesense uses the camera to calibrate your device by detecting the brightness level"
+      },
+      "bundleIdentifier": "com.luxsmart.controller",
+      "publishBundlePath": "ios/luxsmart/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/luxsmart/Supporting/shell-app-manifest.json",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.162033661894-763nevu2856e1d9j85j050bf0gjf4u87"
+        }
+      },
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "usesAppleSignIn": true
+    },
+    "android": {
+      "permissions": ["CAMERA"],
+      "package": "com.luxsmart.controller",
+      "googleServicesFile": "./google-services.json"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "cventix",
+            "project": "litesense",
+            "authToken": "56c20b4f7994454e9f2127b061c180e9e07250383f914c9489d28d61a9f62e48"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,255 @@
+2018-04-12T03:04:33.193Z - info: User function triggered, starting execution
+2018-04-12T03:04:33.197Z - info: Function crashed
+Error: Argument "documentPath" is not a valid ResourcePath. Path must be a non-empty string.
+    at Object.exports.(anonymous function) [as isResourcePath] (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/firestore/src/validate.js:86:15)
+    at CollectionReference.doc (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/firestore/src/reference.js:2117:16)
+    at Object.exports.commissionReport (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/lib/reports.js:9:10)
+    at exports.doCommissionReport.functions.https.onRequest (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/lib/index.js:37:20)
+    at cloudFunction (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/firebase-functions/lib/providers/https.js:37:41)
+    at app.use (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/worker.js:142:11)
+    at Layer.handle [as handle_request] (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:317:13)
+    at /usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/router/index.js:335:12)
+2018-04-12T03:04:33.210Z - info: Execution took 21 ms, user function completed successfully
+2018-04-12T03:04:33.359Z - info: Worker for doCommissionReport closed due to file changes.
+2018-04-12T03:06:07.592Z - info: User function triggered, starting execution
+2018-04-12T03:06:09.858Z - error: (node:65506) UnhandledPromiseRejectionWarning: TypeError: callback is not a function
+    at /Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/src/file.js:1715:7
+    at getCredentials (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:300:9)
+    at googleAuthClient.getCredentials (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:170:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+2018-04-12T03:06:09.859Z - error: (node:65506) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:65506) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2018-04-12T03:07:07.553Z - info: Execution took 62029 ms, finished with status: 'timeout'
+2018-04-12T03:07:07.578Z - info: Execution took 62054 ms, finished with status: 'crash'
+2018-04-12T03:07:07.588Z - error: Something went wrong with the function!
+2018-04-12T03:07:07.588Z - error:  Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at validateHeader (_http_outgoing.js:503:11)
+    at ServerResponse.setHeader (_http_outgoing.js:510:3)
+    at ServerResponse.header (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)
+    at ProxyServer.Supervisor._proxy.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/supervisor.js:107:14)
+    at ProxyServer.emit (/usr/local/lib/node_modules/firebase-tools/node_modules/eventemitter3/index.js:144:27)
+    at ClientRequest.proxyError (/usr/local/lib/node_modules/firebase-tools/node_modules/http-proxy/lib/http-proxy/passes/web-incoming.js:156:18)
+    at ClientRequest.emit (events.js:127:13)
+    at Socket.socketOnEnd (_http_client.js:428:9)
+2018-04-12T03:07:07.639Z - error: Function worker killed by signal: SIGTERM
+2018-04-12T03:11:40.102Z - info: User function triggered, starting execution
+2018-04-12T03:11:40.105Z - info: joOi5XfErwRAEAJQqB0e
+2018-04-12T03:11:42.242Z - error: (node:65674) UnhandledPromiseRejectionWarning: TypeError: callback is not a function
+    at /Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/src/file.js:1715:7
+    at getCredentials (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:300:9)
+    at googleAuthClient.getCredentials (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:170:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+2018-04-12T03:11:42.243Z - error: (node:65674) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:65674) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2018-04-12T03:12:37.475Z - info: Execution took 57399 ms, finished with status: 'crash'
+2018-04-12T03:12:37.491Z - error: Function worker killed by signal: SIGTERM
+2018-04-12T03:14:05.152Z - info: User function triggered, starting execution
+2018-04-12T03:14:05.154Z - info: joOi5XfErwRAEAJQqB0e
+2018-04-12T03:14:07.226Z - error: (node:65744) UnhandledPromiseRejectionWarning: TypeError: callback is not a function
+    at /Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/src/file.js:1715:7
+    at getCredentials (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:300:9)
+    at googleAuthClient.getCredentials (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:170:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+(node:65744) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+2018-04-12T03:14:07.227Z - error: (node:65744) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2018-04-12T03:15:05.141Z - info: Execution took 60004 ms, finished with status: 'timeout'
+2018-04-12T03:15:05.153Z - info: Execution took 60016 ms, finished with status: 'crash'
+2018-04-12T03:15:05.154Z - error: Something went wrong with the function!
+2018-04-12T03:15:05.154Z - error:  Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at validateHeader (_http_outgoing.js:503:11)
+    at ServerResponse.setHeader (_http_outgoing.js:510:3)
+    at ServerResponse.header (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)
+    at ProxyServer.Supervisor._proxy.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/supervisor.js:107:14)
+    at ProxyServer.emit (/usr/local/lib/node_modules/firebase-tools/node_modules/eventemitter3/index.js:144:27)
+    at ClientRequest.proxyError (/usr/local/lib/node_modules/firebase-tools/node_modules/http-proxy/lib/http-proxy/passes/web-incoming.js:156:18)
+    at ClientRequest.emit (events.js:127:13)
+    at Socket.socketOnEnd (_http_client.js:428:9)
+2018-04-12T03:15:05.185Z - error: Function worker killed by signal: SIGTERM
+2018-04-12T03:18:40.622Z - info: User function triggered, starting execution
+2018-04-12T03:18:40.624Z - info: joOi5XfErwRAEAJQqB0e
+2018-04-12T03:18:42.621Z - info: { email: 'bunnings-moorabbin@bunnings.com',
+  name: 'Bunnings Warehouse',
+  address: 
+   { address2: 'Level 11',
+     state: 'Victoria',
+     country: 'Australia',
+     address1: '128 Fake Street',
+     postcode: '3123',
+     suburb: 'Hawthorn West' } }
+2018-04-12T03:18:42.699Z - error: (node:65909) UnhandledPromiseRejectionWarning: TypeError: callback is not a function
+    at /Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/src/file.js:1715:7
+    at getCredentials (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:300:9)
+    at googleAuthClient.getCredentials (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:170:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+2018-04-12T03:18:42.699Z - error: (node:65909) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:65909) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2018-04-12T03:19:40.613Z - info: Execution took 60009 ms, finished with status: 'timeout'
+2018-04-12T03:19:40.629Z - info: Execution took 60026 ms, finished with status: 'crash'
+2018-04-12T03:19:40.630Z - error: Something went wrong with the function!
+2018-04-12T03:19:40.630Z - error:  Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at validateHeader (_http_outgoing.js:503:11)
+    at ServerResponse.setHeader (_http_outgoing.js:510:3)
+    at ServerResponse.header (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)
+    at ProxyServer.Supervisor._proxy.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/supervisor.js:107:14)
+    at ProxyServer.emit (/usr/local/lib/node_modules/firebase-tools/node_modules/eventemitter3/index.js:144:27)
+    at ClientRequest.proxyError (/usr/local/lib/node_modules/firebase-tools/node_modules/http-proxy/lib/http-proxy/passes/web-incoming.js:156:18)
+    at ClientRequest.emit (events.js:127:13)
+    at Socket.socketOnEnd (_http_client.js:428:9)
+2018-04-12T03:19:40.669Z - error: Function worker killed by signal: SIGTERM
+2018-04-12T03:21:33.859Z - info: User function triggered, starting execution
+joOi5XfErwRAEAJQqB0e
+2018-04-12T03:21:35.878Z - info: { address: 
+   { address2: 'Level 11',
+     state: 'Victoria',
+     country: 'Australia',
+     address1: '128 Fake Street',
+     postcode: '3123',
+     suburb: 'Hawthorn West' },
+  email: 'bunnings-moorabbin@bunnings.com',
+  name: 'Bunnings Warehouse' }
+2018-04-12T03:21:35.878Z - info: 1
+2018-04-12T03:21:35.898Z - info: 2
+2018-04-12T03:21:35.899Z - info: 3
+2018-04-12T03:21:35.899Z - info: 4
+2018-04-12T03:21:35.900Z - info: 5
+2018-04-12T03:21:35.901Z - info: 6
+2018-04-12T03:21:35.906Z - info: 7
+2018-04-12T03:21:35.906Z - info: 8
+2018-04-12T03:21:35.950Z - error: (node:65995) UnhandledPromiseRejectionWarning: TypeError: callback is not a function
+    at /Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/src/file.js:1715:7
+    at getCredentials (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:300:9)
+    at googleAuthClient.getCredentials (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:170:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:160:7)
+2018-04-12T03:21:35.950Z - error: (node:65995) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:65995) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2018-04-12T03:22:33.823Z - info: Execution took 60006 ms, finished with status: 'timeout'
+2018-04-12T03:22:33.834Z - info: Execution took 60017 ms, finished with status: 'crash'
+2018-04-12T03:22:33.835Z - error: Something went wrong with the function!
+2018-04-12T03:22:33.835Z - error:  Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at validateHeader (_http_outgoing.js:503:11)
+    at ServerResponse.setHeader (_http_outgoing.js:510:3)
+    at ServerResponse.header (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)
+    at ProxyServer.Supervisor._proxy.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/supervisor.js:107:14)
+    at ProxyServer.emit (/usr/local/lib/node_modules/firebase-tools/node_modules/eventemitter3/index.js:144:27)
+    at ClientRequest.proxyError (/usr/local/lib/node_modules/firebase-tools/node_modules/http-proxy/lib/http-proxy/passes/web-incoming.js:156:18)
+    at ClientRequest.emit (events.js:127:13)
+    at Socket.socketOnEnd (_http_client.js:428:9)
+2018-04-12T03:22:33.876Z - error: Function worker killed by signal: SIGTERM
+2018-04-12T03:25:36.791Z - info: User function triggered, starting execution
+2018-04-12T03:25:36.793Z - info: joOi5XfErwRAEAJQqB0e
+2018-04-12T03:25:38.681Z - info: { address: 
+   { address2: 'Level 11',
+     state: 'Victoria',
+     country: 'Australia',
+     address1: '128 Fake Street',
+     postcode: '3123',
+     suburb: 'Hawthorn West' },
+  email: 'bunnings-moorabbin@bunnings.com',
+  name: 'Bunnings Warehouse' }
+2018-04-12T03:25:38.681Z - info: 1
+2018-04-12T03:25:38.698Z - info: 2
+2018-04-12T03:25:38.701Z - info: 3
+2018-04-12T03:25:38.701Z - info: 4
+2018-04-12T03:25:38.701Z - info: 5
+2018-04-12T03:25:38.704Z - info: 6
+2018-04-12T03:25:38.711Z - info: 7
+2018-04-12T03:25:38.711Z - info: 8
+2018-04-12T03:26:36.774Z - info: Execution took 60003 ms, finished with status: 'timeout'
+2018-04-12T03:26:36.790Z - info: Execution took 60019 ms, finished with status: 'crash'
+2018-04-12T03:26:36.791Z - error: Something went wrong with the function!
+2018-04-12T03:26:36.791Z - error:  Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at validateHeader (_http_outgoing.js:503:11)
+    at ServerResponse.setHeader (_http_outgoing.js:510:3)
+    at ServerResponse.header (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)
+    at ProxyServer.Supervisor._proxy.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/supervisor.js:107:14)
+    at ProxyServer.emit (/usr/local/lib/node_modules/firebase-tools/node_modules/eventemitter3/index.js:144:27)
+    at ClientRequest.proxyError (/usr/local/lib/node_modules/firebase-tools/node_modules/http-proxy/lib/http-proxy/passes/web-incoming.js:156:18)
+    at ClientRequest.emit (events.js:127:13)
+    at Socket.socketOnEnd (_http_client.js:428:9)
+2018-04-12T04:20:16.444Z - info: User function triggered, starting execution
+2018-04-12T04:20:16.457Z - info: joOi5XfErwRAEAJQqB0e
+2018-04-12T04:20:18.552Z - info: { email: 'bunnings-moorabbin@bunnings.com',
+  name: 'Bunnings Warehouse',
+  address: 
+   { state: 'Victoria',
+     country: 'Australia',
+     address1: '128 burwood road',
+     postcode: '3122',
+     suburb: 'Hawthorn West',
+     address2: 'Level 11' } }
+1
+2018-04-12T04:20:18.588Z - info: 2
+2018-04-12T04:20:18.598Z - info: 3
+2018-04-12T04:20:18.598Z - info: 4
+2018-04-12T04:20:18.599Z - info: 5
+2018-04-12T04:20:18.605Z - info: 6
+2018-04-12T04:20:18.616Z - info: 7
+2018-04-12T04:20:22.127Z - info: 8
+2018-04-12T04:20:22.134Z - error: (node:67597) UnhandledPromiseRejectionWarning: SigningError: Cannot sign data without `client_email`.
+    at /Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/src/file.js:1715:16
+    at Auth._signWithApi (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:322:7)
+    at getCredentials (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:307:14)
+    at googleAuthClient.getCredentials (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:190:9)
+    at /Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/google-auth-library/build/src/auth/googleauth.js:589:67
+    at <anonymous>
+2018-04-12T04:20:22.134Z - error: (node:67597) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:67597) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+2018-04-12T04:21:16.254Z - info: Execution took 60072 ms, finished with status: 'timeout'
+2018-04-12T04:21:16.292Z - info: Execution took 60112 ms, finished with status: 'crash'
+2018-04-12T04:21:16.310Z - error: Something went wrong with the function!
+2018-04-12T04:21:16.317Z - error:  Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at validateHeader (_http_outgoing.js:503:11)
+    at ServerResponse.setHeader (_http_outgoing.js:510:3)
+    at ServerResponse.header (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:767:10)
+    at ServerResponse.send (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/usr/local/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:267:15)
+    at ProxyServer.Supervisor._proxy.on (/usr/local/lib/node_modules/firebase-tools/node_modules/@google-cloud/functions-emulator/src/supervisor/supervisor.js:107:14)
+    at ProxyServer.emit (/usr/local/lib/node_modules/firebase-tools/node_modules/eventemitter3/index.js:144:27)
+    at ClientRequest.proxyError (/usr/local/lib/node_modules/firebase-tools/node_modules/http-proxy/lib/http-proxy/passes/web-incoming.js:156:18)
+    at ClientRequest.emit (events.js:127:13)
+    at Socket.socketOnEnd (_http_client.js:428:9)
+2018-04-12T04:21:16.440Z - error: Function worker killed by signal: SIGTERM
+2018-04-12T04:28:01.804Z - info: User function triggered, starting execution
+2018-04-12T04:28:01.806Z - info: joOi5XfErwRAEAJQqB0e
+2018-04-12T04:28:03.771Z - info: { address: 
+   { address1: '128 burwood road',
+     postcode: '3122',
+     suburb: 'Hawthorn West',
+     address2: 'Level 11',
+     state: 'Victoria',
+     country: 'Australia' },
+  email: 'bunnings-moorabbin@bunnings.com',
+  name: 'Bunnings Warehouse' }
+2018-04-12T04:28:03.771Z - info: 1
+2018-04-12T04:28:03.787Z - info: 2
+2018-04-12T04:28:03.789Z - info: 3
+2018-04-12T04:28:03.789Z - info: 4
+2018-04-12T04:28:03.789Z - info: 5
+2018-04-12T04:28:03.791Z - info: 6
+2018-04-12T04:28:03.796Z - info: 7
+2018-04-12T04:28:07.151Z - info: 8
+2018-04-12T04:28:07.153Z - error: { SigningError: Cannot sign data without `client_email`.
+    at /Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/src/file.js:1715:16
+    at Auth._signWithApi (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:322:7)
+    at getCredentials (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:307:14)
+    at googleAuthClient.getCredentials (/Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/@google-cloud/storage/node_modules/google-auto-auth/index.js:190:9)
+    at /Users/rossmack/dev/luxsmart/LuxsmartController/firebase/functions/node_modules/google-auth-library/build/src/auth/googleauth.js:589:67
+    at <anonymous> message: 'Cannot sign data without `client_email`.' }
+2018-04-12T04:28:07.161Z - info: Execution took 5357 ms, user function completed successfully
